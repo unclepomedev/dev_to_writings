@@ -8,9 +8,7 @@ series: My Blender Tools
 
 # Controlling Blender with Gemini 3
 
-Gemini 3 was recently announced. According to the [benchmarks](https://blog.google/products/gemini/gemini-3/), it
-belongs to the top tier in coding capabilities. I tried using it with the Blender API, and it felt not just competitive,
-but potentially better than other models. Here is a quick introduction.
+Gemini 3 was recently announced. According to the [benchmarks](https://blog.google/products/gemini/gemini-3/), it belongs to the top tier in coding capabilities. I tried using it with the Blender API, and it felt not just competitive, but potentially better than other models. Here is a quick introduction.
 
 ## Showcase
 
@@ -32,6 +30,4 @@ https://github.com/unclepomedev/BlenderGeminiAgent
 
 ## Conclusion
 
-There are no specific benchmarks for Blender coding, so this is just my personal impression, but Gemini 3 feels superior
-to other models for this task. If this intuition is correct, I wonder if it is due to the influence of YouTube training
-data or its multimodal capabilities.
+There are no specific benchmarks for Blender coding, so this is just my personal impression, but Gemini 3 feels superior to other models for this task. If this intuition is correct, I wonder if it is due to the influence of YouTube training data or its multimodal capabilities.
