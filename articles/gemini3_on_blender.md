@@ -1,7 +1,7 @@
 ---
 description: Bringing the power of Gemini 3 to Blender.
 id: 3051974
-published: false
+published: true
 series: My Blender Tools
 tags:
 - python
