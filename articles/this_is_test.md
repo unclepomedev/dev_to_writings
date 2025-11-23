@@ -2,7 +2,7 @@
 title: My First Automation Post
 published: false
 description: This is a description for SEO.
-tags: blender
+tags: python
 series: My Blender Tools
 ---
 
