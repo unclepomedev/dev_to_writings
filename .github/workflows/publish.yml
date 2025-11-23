@@ -1,0 +1,23 @@
+name: Publish to Dev.to
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'articles/*.md'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: sinedied/publish-devto-action@v2
+        with:
+          devto_key: ${{ secrets.DEVTO_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          files: 'articles/*.md'
+          branch: main
