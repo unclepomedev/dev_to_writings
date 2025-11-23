@@ -1,6 +1,5 @@
 ---
-title: Controlling Blender with Gemini 3
-id: 2402838
+title: Controlling Blender with Gemini 3 
 published: false
 description: Bringing the power of Gemini 3 to Blender.
 tags: [ python, blender, ai ]
