@@ -13,11 +13,9 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: sinedied/publish-devto@v2
+      - name: Sync to Dev.to
+        uses: unclepomedev/devto-publisher@v1
         with:
           devto_key: ${{ secrets.DEVTO_API_KEY }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          files: 'articles/*.md'
-          branch: main
