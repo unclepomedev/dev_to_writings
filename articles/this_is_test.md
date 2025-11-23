@@ -1,9 +1,12 @@
 ---
-title: My First Automation Post
-published: false
 description: This is a description for SEO.
-tags: [python, blender]
+id: 3051973
+published: false
 series: My Blender Tools
+tags:
+- python
+- blender
+title: My First Automation Post
 ---
 
 # Hello Dev.to!
