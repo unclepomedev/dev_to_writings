@@ -1,7 +1,7 @@
 ---
 description: Blender Addon Development Needs More DevOps.
 id: 3087857
-published: false
+published: true
 series: Blender Addon Development
 tags:
 - python
