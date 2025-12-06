@@ -83,7 +83,7 @@ https://docs.blender.org/manual/en/latest/advanced/command_line/arguments.html
 
 I keep [`operators.py`](https://github.com/unclepomedev/blender_savepoints/blob/main/savepoints/operators.py#L204) (the interface with Blender) as thin as possible and extract the actual processing into functions in [`core.py`](https://github.com/unclepomedev/blender_savepoints/blob/main/savepoints/core.py#L293) that do not depend on `bpy`.
 
-```python:operators.py
+```python
 class SAVEPOINTS_OT_delete(bpy.types.Operator):
     # ...
     def execute(self, context):
@@ -96,7 +96,7 @@ class SAVEPOINTS_OT_delete(bpy.types.Operator):
         return {'FINISHED'}
 ```
 
-```python:core.py
+```python
 def delete_version_by_id(version_id: str) -> None:
     # ... Only standard Python processing like shutil, json operations, etc., without using bpy
 ```
@@ -115,7 +115,7 @@ Anticipating that CI environments basically do not have a GUI, I create escape h
 
 For example, in [`core.py`](https://github.com/unclepomedev/blender_savepoints/blob/main/savepoints/core.py#L210), when capturing a thumbnail using OpenGL, an error occurs in headless mode because no window exists. So, I suppress the exception and allow the process to continue.
 
-```python:core.py
+```python
 def capture_thumbnail(context: bpy.types.Context, thumb_path: str) -> None:
     # ...
     try:
@@ -223,7 +223,7 @@ With this, when you want to verify, environments for 4.2 and 5.0 spin up, and te
 
 You need to keep in mind that GitHub Actions Ubuntu runners do not have GPUs, so processes using OpenGL will error out. If this is accounted for during implementation, there is no problem.
 
-By the way, there seem to be third-party actions to setup the Blender environment, and if you check the implementation and judge it's OK, you can use them. I personally didn't feel like using them.
+By the way, there seem to be third-party actions to setup the Blender environment, and if you check the implementation and judge it's OK, you can use them.
 
 ### Point 4: Automatic Release as a Gatekeeper
 
